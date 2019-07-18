@@ -1,11 +1,12 @@
 {
-  "name": "wb-cli-template",
-  "version": "1.0.0",
-  "description": "",
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    
   },
-  "author": "",
+  "author": "{{author}}",
   "license": "ISC"
 }
