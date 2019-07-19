@@ -1,10 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+
 const config = {
-  entry: './src/index.js', // 不写默认也是它 
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, '../dist'),
     filename: 'js/[name].[hash].js',
   },
   module: {
@@ -25,22 +25,22 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',
-      title: 'hehe ~~~',
+      template: path.resolve(__dirname, '../public/index.html'),
+      title: 'wb-cli-react',
     }),
   ],
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, '../src'),
     }
   },
   devServer: {
-    contentBase: "./dist",
+    contentBase: path.resolve(__dirname, '../dist'),
     progress: true,
     hot: true,
     port: 3000,
-  }
+  },
 };
 
 module.exports = (env, argv) => {
