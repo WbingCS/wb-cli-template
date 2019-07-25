@@ -1,6 +1,10 @@
 const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+
+const babelConfig = require('./babel.base');
+
 
 const config = {
   output: {
@@ -11,7 +15,13 @@ const config = {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: ['babel-loader']
+        use: [{
+          loader: 'babel-loader',
+          options: {
+            ...babelConfig,
+            babelrc: false,
+          }
+        }]
       },
       {
         test: /\.css$/,

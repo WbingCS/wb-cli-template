@@ -1,2 +1,2 @@
 # -wb-cli-template
-@wb/cli 脚手架的模板
+wb-cli-react 脚手架的模板
