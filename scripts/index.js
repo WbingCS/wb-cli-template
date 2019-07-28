@@ -21,6 +21,12 @@ const config = {
             ...babelConfig,
             babelrc: false,
           }
+        }, {
+          loader: 'eslint-loader',
+          options: {
+            fix: true,
+            enforce: 'pre',
+        }
         }]
       },
       {
