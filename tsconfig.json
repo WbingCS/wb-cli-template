@@ -11,9 +11,9 @@
       "@/*": [
         "src/*"
       ],
-      "Components/*": [
-        "src/components/*"
-      ],
+      "*": [
+        ""
+      ]
     },
     "declaration": true,
     "outDir": "dist",
