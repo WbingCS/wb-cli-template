@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as ReactDOM from 'react-dom'
 
 interface IProps {}
 
@@ -13,4 +14,6 @@ const App: React.SFC<IProps> = props => (
   </div>
 )
 
-export default App
+export default () => {
+  ReactDOM.render(<App />, document.querySelector('#root'))
+}

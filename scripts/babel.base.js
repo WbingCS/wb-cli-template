@@ -1,23 +1,23 @@
-const presets = [
-  '@babel/preset-typescript',
-  '@babel/preset-react',
-];
+const presets = ['@babel/preset-typescript', '@babel/preset-react']
 
 const plugins = [
-  ['@babel/plugin-proposal-decorators', {
-    legacy: true
-  }],
-  ['@babel/plugin-proposal-class-properties', {
-    loose: true
-  }],
+  [
+    '@babel/plugin-proposal-decorators',
+    {
+      legacy: true
+    }
+  ],
+  [
+    '@babel/plugin-proposal-class-properties',
+    {
+      loose: true
+    }
+  ],
   '@babel/plugin-syntax-dynamic-import',
-  ['styled-jsx/babel', {
-    sourceMaps: true,
-    vendorPrefixes: true,
-  },],
-];
+  ['styled-jsx/babel', { optimizeForSpeed: true }]
+]
 
 module.exports = {
   presets,
-  plugins,
-};
+  plugins
+}

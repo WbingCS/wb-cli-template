@@ -1,9 +1,3 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import render from './app'
 
-import App from '@/app';
-
-ReactDOM.render(
-  <App/>,
-  document.querySelector('#root')
-);
+render()
