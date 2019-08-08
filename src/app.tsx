@@ -1,7 +1,10 @@
 import * as React from 'react';
 
-function App() {
-  return (
+interface IProps {
+  
+}
+
+const App: React.SFC<IProps> = (props) => (
     <div>
       Hello World!
       <style jsx>{`
@@ -10,7 +13,7 @@ function App() {
         }  
       `}</style>
     </div>
-  );
-}
+)
+
 
 export default App;

@@ -6,6 +6,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 const babelConfig = require('./babel.base')
 
 const config = {
+  entry: path.resolve(__dirname, '../src/index.tsx'),
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: 'js/[name].[hash].js'
@@ -13,7 +14,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.(ts|tsx|js|jsx)$/,
         use: [
           {
             loader: 'babel-loader',
@@ -41,7 +42,7 @@ const config = {
     })
   ],
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.ts', '.tsx','.js', '.jsx'],
     alias: {
       '@': path.resolve(__dirname, '../src')
     }

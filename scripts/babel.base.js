@@ -1,4 +1,5 @@
 const presets = [
+  '@babel/preset-typescript',
   '@babel/preset-react',
 ];
 
@@ -10,7 +11,10 @@ const plugins = [
     loose: true
   }],
   '@babel/plugin-syntax-dynamic-import',
-  'styled-jsx/babel'
+  ['styled-jsx/babel', {
+    sourceMaps: true,
+    vendorPrefixes: true,
+  },],
 ];
 
 module.exports = {

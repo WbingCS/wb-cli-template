@@ -19,6 +19,7 @@ module.exports = {
     'max-lines': ['error', 600],
     'multiline-ternary': 'warn',
     'newline-per-chained-call': 'warn',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'semi': ['warn', 'never'],
   },
 };
