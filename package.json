@@ -1,4 +1,7 @@
 {
+  "name": "{{name}}",
+  "version": "{{version}}",
+  "description": "{{description}}",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -13,8 +16,8 @@
   "dependencies": {
     "@babel/core": "^7.3.4",
     "core-js": "^3.1.4",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.5.0",
