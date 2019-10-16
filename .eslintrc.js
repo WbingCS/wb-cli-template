@@ -1,13 +1,12 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser:  '@typescript-eslint/parser',
+  extends: ['plugin:@typescript-eslint/recommended'],
   env: {
   },
   root: true,
-  extends: [
-  ],
-  plugins: ['prettier'],
+  plugins: ['prettier', '@typescript-eslint'],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'warn',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'brace-style': 'warn',
@@ -20,6 +19,5 @@ module.exports = {
     'multiline-ternary': 'warn',
     'newline-per-chained-call': 'warn',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'semi': ['warn', 'never'],
   },
 };
